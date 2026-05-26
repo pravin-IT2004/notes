@@ -1,0 +1,281 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #e9eefc;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #6ea8fe;
+}
+
+.logo em {
+  color: #7c3aed;
+}
+
+.nav a {
+  margin: 0 12px;
+  color: #cbd5e1;
+}
+
+.nav a:hover {
+  color: #6ea8fe;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #6ea8fe, #7c3aed);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 1px solid #6ea8fe;
+  color: #6ea8fe;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+.btn-secondary:hover {
+  background: rgba(110, 168, 254, 0.1);
+}
+
+.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #6ea8fe;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #aab4d6;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons a {
+  margin: 0 10px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+  padding: 70px 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.alt {
+  background: #0f172a;
+}
+
+/* =========================
+   GRID
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #6ea8fe;
+}
+
+/* =========================
+   STEPS
+========================= */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.step span {
+  display: inline-block;
+  background: #6ea8fe;
+  color: #0b1220;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   GENERATOR LAYOUT
+========================= */
+.generator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .generator {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  outline: none;
+}
+
+/* =========================
+   NOTE ITEM (MONGODB DATA)
+========================= */
+.note-item {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.note-item h4 {
+  color: #6ea8fe;
+  margin-bottom: 5px;
+}
+
+.note-item p {
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.note-item button {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #aab4d6;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  margin: 0 10px;
+  color: #6ea8fe;
+}
